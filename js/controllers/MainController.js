@@ -43,7 +43,7 @@ var populatePhotosCallback = function(jsonString){
 var populatePhotosHelper = function(data){
     console.log(data);
     $photo_container = $('.photos');
-    $('#events').css('background-image', 'url(' + data.photos[0].source + ')')
+    $('#events').css('background-image', 'url(' + data.photos[0].source + ')');
     $('#photos').css('background-size', 'cover');
     data.photos.forEach(function(photo){
       $photo_container.append('<div class="col-lg-2 photobox"></div>')
